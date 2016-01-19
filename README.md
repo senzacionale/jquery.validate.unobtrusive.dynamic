@@ -15,14 +15,13 @@ For example parse dynamic content like:
 
     $.validator.unobtrusive.parseDynamicContent('input.something');
 
-
 I also added the ability to remove rules for elements you remove from the dom. So, when you remove elements from the Dom and you want those validation rules removed also then call
 
     $.validator.unobtrusive.unparseContent('input.something');
 	
 You cal always reparse whole `FORM` with
 
-   $("form").data("unobtrusiveValidation", null);
-   $("form").data("validator", null);
-   $.validator.unobtrusive.parse($("form"));	
-
+    $("form").data("unobtrusiveValidation", null);
+    $("form").data("validator", null);
+    $.validator.unobtrusive.parse($("form"));	  
+   
